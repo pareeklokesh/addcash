@@ -103,6 +103,60 @@ text-align: center;
   bottom: 35px;
   left: 0;
 }
+.header p {
+  position: relative;
+  top: 18px;
+}
+.selectpay a {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+.selectpay * {
+  transition: all .4s linear;
+}
+.selectpay a.active {
+  position: relative;
+}
+.selectpay a.active::before {
+    content: "✔";
+display: block;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background: #003244;
+position: absolute;
+top: -4px;
+color: #fff;
+font-size: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotate(15deg);
+right: -6px;
+
+}
+
+.d-flex.selectpay {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+  margin: 25px 0;
+}
+.selectpay a {
+  border: 1px solid #003244;
+  padding: 10px 0;
+}
+.selectpay a {
+  border: 1px solid #003244;
+padding: 5px 10px;
+width: 30%;
+}
+.selectpay a img {
+  height: 38px;
+}
 
 @media (max-width: 500px) {
   .w-3 {

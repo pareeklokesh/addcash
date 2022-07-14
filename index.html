@@ -6,6 +6,7 @@
 	<title>Add Cash</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+	<script src="assets/js/jquery.min.js"></script>
 </head>
 <body>
 <div class="w-100 fullpage">
@@ -22,7 +23,7 @@
 		<div class="w-100" style="padding: 25px 20px;">
 		<div class="option">
 			<p>Select an option to pay (UPI)</p>
-			<div class="d-flex">
+			<div class="d-flex selectpay">
 				<a href="#"><img src="assets/img/1.png" /></a>
 				<a href="#"><img src="assets/img/2.png" /></a>
 				<a href="#"><img src="assets/img/3.png" /></a>
@@ -46,5 +47,12 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(".selectpay a").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	});
+</script>
+
 </body>
 </html>
