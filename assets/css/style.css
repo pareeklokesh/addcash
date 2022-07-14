@@ -100,12 +100,13 @@ text-align: center;
 }
 .paybutton {
   position: absolute;
-  bottom: 25px;
+  bottom: 35px;
   left: 0;
 }
 
 @media (max-width: 500px) {
   .w-3 {
     width: 100%;
+    bottom: 0;
   }
 }
